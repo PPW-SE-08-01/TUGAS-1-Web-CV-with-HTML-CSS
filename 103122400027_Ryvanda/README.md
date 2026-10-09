@@ -4,7 +4,7 @@
 
 Website CV pribadi sederhana buat tugas Praktikum Web. Fokusnya lebih ke penampilan struktur halaman yang rapi, semantik, dan responsif banget, bukan malah dibuat keruntuhan sama fancy animasi.
 
-## 🎯 Poin Utama
+## Poin Utama
 
 - Pake **HTML5 semantik**, jadi strukturnya jalanin `<header>`, `<nav>`, `<main>`, `<aside>`, `<article>`, `<section>`, `<footer>` secara benar;
 - CSS-nya **native eksternal**, tidak pakai framework, tidak ada inline style yang disebar-disebar di HTML (semoga);
@@ -12,7 +12,7 @@ Website CV pribadi sederhana buat tugas Praktikum Web. Fokusnya lebih ke penampi
 - Sidebar navigasi tetap kelihatan di atas-samping, tapi kalau buka di HP bakal jadi satu kolom utuh;
 - Setting warna dipisah di variable CSS (`:root`), jadi kalau mau ganti tema biru ke coklat atau ngubah nuansa, tinggal ubah di satu tempat.
 
-## 📂 Struktur File
+## Struktur File
 
 ```
 .
@@ -22,7 +22,7 @@ Website CV pribadi sederhana buat tugas Praktikum Web. Fokusnya lebih ke penampi
 
 Yang ada cuma dua file, jadi kalau ada yang mau ditambahin halaman atau component, pelajari dulu di sini sebelum malah bikin banyak file.
 
-## 🌐 Cara Pakai
+## Cara Pakai
 
 Buka file `index.html` langsung lewat browser, atau kalau mau lihat perubahan CSS sambil mengedit, jalankan server lokal.
 
@@ -36,7 +36,7 @@ Lalu buka `http://localhost:8000`.
 
 Kalau mau pakai server lain, terserah. Yang penting HTML dan CSS-nya bisa dibaca browser, dan relative path-nya tetep benar.
 
-## 🧱 Struktur Halaman
+## Struktur Halaman
 
 - Header utama di paling atas;
 - Sidebar kiri buat identitas singkat dan menu navigasi;
@@ -51,7 +51,7 @@ Kalau mau pakai server lain, terserah. Yang penting HTML dan CSS-nya bisa dibaca
 
 Konten ditulis dalam Bahasa Indonesia, sesuai konteks mahasiswa Software Engineering yang lagi latihan bikin halaman web sendiri.
 
-## 🎨 Desain
+## Desain
 
 ### Warna
 
@@ -79,14 +79,14 @@ Warna dasarnya biru, diatur pakai CSS custom properties di `:root`. Kalau mau ga
 
 Tidak pakai framework CSS, tidak pakai build tool, tidak pakai JavaScript. Gapapa kalau nanti perlu JS buat halaman lain, tapi untuk skope CV ini tetep disederhanakan.
 
-## ✅ Validasi Pokok (yang biasanya dilihat di praktikum)
+## Validasi Pokok (yang biasanya dilihat di praktikum)
 
 - Semua elemen konten dibungkus elemen semantik yang tepat;
 - Tautan kontak pakai `mailto:` dan `https://wa.me/...` sesuai bentuk yang baku;
 - Sidebar dan footer tidak hilang saat resize;
 - Elemen yang sifatnya hanya untuk screen reader jika ada bisa diberi class `.sr-only`.
 
-## 🔮 Pengembangan Selanjutnya
+## Pengembangan Selanjutnya
 
 Kalau tugas atau urusan berikutnya butuh:
 
