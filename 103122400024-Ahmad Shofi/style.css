@@ -1,0 +1,553 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f1ed;
+    color: #2f3540;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   CV LAYOUT
+========================= */
+
+body > div:not(.register-container) {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.container {
+    width: 290px;
+    min-height: 100vh;
+    background-color: #263442;
+    color: white;
+    padding: 35px 28px;
+}
+
+
+/* PROFILE */
+
+.foto {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.foto img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e7e2da;
+    transition: 0.3s ease;
+}
+
+.foto img:hover {
+    transform: scale(1.04);
+}
+
+
+/* SIDEBAR HEADING */
+
+.container h2 {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 22px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #788592;
+}
+
+.container h3 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 22px;
+    margin-bottom: 7px;
+    color: #e1ddd6;
+}
+
+
+/* CONTACT */
+
+.container p {
+    font-size: 13px;
+    color: #d7dde3;
+    margin-bottom: 3px;
+}
+
+
+/* SKILLS & SOCIAL MEDIA */
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    font-size: 14px;
+    color: #d7dde3;
+    padding: 4px 0;
+    transition: 0.2s ease;
+}
+
+.container ul li::before {
+    content: "—";
+    margin-right: 7px;
+    color: #aeb8c1;
+}
+
+.container ul li:hover {
+    color: white;
+    padding-left: 4px;
+}
+
+.container a {
+    color: #d7dde3;
+}
+
+.container a:hover {
+    color: white;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+    flex: 1;
+    background-color: #fbfaf8;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: relative;
+    padding: 42px 45px;
+    background-color: #e8e4dd;
+    border-bottom: 1px solid #d5d0c9;
+    animation: headerEnter 0.7s ease;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #263442;
+    letter-spacing: -0.5px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #68727c;
+    margin-top: 2px;
+}
+
+
+/* REGISTER BUTTON */
+
+.register-button {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    background-color: #44596d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.register-button:hover {
+    background-color: #334656;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 27px 45px;
+    border-bottom: 1px solid #e0ddd8;
+    background-color: #fbfaf8;
+    animation: sectionEnter 0.7s ease;
+}
+
+section:hover {
+    background-color: #f7f5f1;
+}
+
+section h2 {
+    font-size: 22px;
+    color: #263442;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #8b7765;
+    margin-top: 4px;
+    transition: 0.3s ease;
+}
+
+section:hover h2::after {
+    width: 55px;
+}
+
+section p {
+    color: #505862;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education .education {
+    padding-top: 8px;
+}
+
+.education h3 {
+    font-size: 17px;
+    color: #313b45;
+    margin-bottom: 2px;
+}
+
+.education span {
+    display: block;
+    color: #7b8289;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    padding: 12px 0;
+}
+
+.experience + .experience {
+    border-top: 1px solid #e1ded9;
+}
+
+.experience h3 {
+    font-size: 17px;
+    color: #313b45;
+}
+
+.experience span {
+    display: block;
+    color: #7b8289;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project {
+    padding: 12px 0;
+}
+
+.project + .project {
+    border-top: 1px solid #e1ded9;
+}
+
+.project h3 {
+    font-size: 17px;
+    color: #313b45;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e4dd;
+    padding: 20px;
+}
+
+.register-box {
+    width: 430px;
+    background-color: #fbfaf8;
+    padding: 32px;
+    border-radius: 5px;
+    border: 1px solid #d7d2cb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    animation: formEnter 0.6s ease;
+}
+
+
+/* REGISTER HEADING */
+
+.register-box h1 {
+    text-align: center;
+    color: #263442;
+    font-size: 29px;
+    margin-bottom: 3px;
+}
+
+.register-description {
+    text-align: center;
+    font-size: 14px;
+    color: #777f87;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: #39434c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 11px;
+    background-color: white;
+    border: 1px solid #c9c6c1;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #667788;
+    box-shadow: 0 0 0 2px rgba(102, 119, 136, 0.08);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   GENDER
+========================= */
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 5px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.gender input {
+    width: auto;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    border: none;
+    border-radius: 3px;
+    background-color: #44596d;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background-color: #334656;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back a {
+    font-size: 13px;
+    color: #53677a;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes headerEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sectionEnter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes formEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    body > div:not(.register-container) {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .header {
+        padding: 30px 25px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .register-button {
+        position: static;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    section {
+        padding: 24px 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .foto img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .register-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .gender {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
