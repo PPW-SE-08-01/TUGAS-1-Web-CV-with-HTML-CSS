@@ -2,7 +2,6 @@
   <img src="Logo_Telkom_University.png" alt="Logo Telkom University" width="180">
 </p>
 
-## Identitas
 
 <div align="center">
 
