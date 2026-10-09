@@ -10,10 +10,12 @@
 
 <br>
 
+<img src="https://bit-jkt.telkomuniversity.ac.id/wp-content/uploads/2023/02/cropped-logo_telkom_university.png" alt="Telkom University Logo">
+
 **Disusun Oleh :**
 
 **Davis Arvaputra Dwiansyah**  
-**NIM: 103122400016**  
+**NIM: 103122400034**  
 **Kelas: SE-08-01**
 
 <br>
@@ -60,7 +62,7 @@ Membuat halaman Curriculum Vitae (CV) menggunakan HTML yang telah diberikan dan 
 
     <!-- HEADER / PROFIL SINGKAT -->
     <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR90b07If3lj8xBWnmdtUrPfgqLHRwTeWBL4twaBPDkEt63ypwe5hXVBv8&s=10"
+        <img src="images/images.jpg"
              alt="Gambar saya"
              width="100"
              height="100"
