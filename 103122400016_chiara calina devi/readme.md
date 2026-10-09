@@ -1,76 +1,246 @@
-# Curriculum Vitae — Chiara Calina Devi
+# LAPORAN PRAKTIKUM
+# PEMROGRAMAN PERANGKAT BERGERAK
 
-Website CV pribadi yang dibuat untuk memenuhi tugas Praktikum Pemrograman Web. Website ini menampilkan informasi profil, pengalaman kerja, riwayat pendidikan, keahlian, serta formulir pendaftaran menggunakan HTML5 semantik.
+<br>
 
-## Poin Utama
+<div align="center">
 
-* Menggunakan **HTML5 semantik** untuk menyusun struktur halaman yang terorganisir.
-* Menampilkan profil pribadi, informasi kontak, ringkasan diri, pengalaman kerja, pendidikan, dan keahlian.
-* Menggunakan elemen tabel HTML untuk menampilkan riwayat pendidikan.
-* Menyediakan formulir yang berisi nama lengkap, alamat, nomor HP, tanggal lahir, dan gender.
-* Menggunakan tautan untuk email dan media sosial.
-* Mengutamakan struktur kode yang sederhana dan mudah dipahami.
+# MODUL 02 & 03
+## HTML CV WITH CSS
 
-## Struktur File
+<br>
 
-```text
-.
-├── index.html   # Halaman utama CV
-└── foto.jpeg    # Foto profil
+**Disusun Oleh :**
+
+**Chiara Calina Devi**  
+**NIM: 103122400016**  
+**Kelas: SE08-01**
+
+<br>
+
+**Asisten Praktikum :**  
+Abu Abdirrahman Humaid Al-Atsary  
+Hamka Zainul Ardhi
+<br>
+
+**Dosen Pengampu :**  
+Arif Amrullah, S.Kom., M.Kom.
+
+<br>
+
+**PROGRAM STUDI S1 SOFTWARE ENGINEERING**  
+**FAKULTAS INFORMATIKA**  
+**TELKOM UNIVERSITY PURWOKERTO**  
+**2026**
+
+</div>
+
+---
+
+# A. SOAL
+
+Membuat halaman Curriculum Vitae (CV) menggunakan HTML yang telah diberikan dan menerapkan CSS untuk mengatur tampilan halaman agar lebih rapi, terstruktur, dan responsif.
+
+# B. JAWABAN
+
+## 1. Source Code
+
+### a. `cv.html`
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Chiara Calina Devi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cv">
+
+    <header>
+      <img src="foto.jpg" alt="Foto Chiara Calina Devi">
+      <div class="kontak">
+        <h1>CHIARA CALINA DEVI</h1>
+        <p><b>Address:</b> Puri Wiradadi 3 Blok B No. 4, Dusun Jl. RW Salak No. 3, RT.08/RW.04, Kec. Sokaraja, Kab. Banyumas, Jawa Tengah 53181</p>
+        <p><b>Phone:</b> 0878-6126-6468</p>
+        <p><b>Email:</b> chiaracalinaa@gmail.com</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>SUMMARY</h2>
+      <p>Adaptable, detail-oriented, and highly organized professional with 3+ years of experience spanning administration, cash handling, operational support, and customer service across F&amp;B, retail, and service environments. Proven track record in managing daily operations, financial record-keeping, client communication, and schedule coordination with accuracy and efficiency. Combines technical problem-solving capabilities as a Software Engineering undergraduate with strong interpersonal and multitasking skills. Reliable, quick to learn, and ready to deliver immediate value in administrative, personal assistance, operational, or customer-facing roles.</p>
+    </section>
+
+    <section>
+      <h2>WORK EXPERIENCE</h2>
+
+      <div class="baris"><span>Nirmala Fashion - Admin</span><span>Juni 2021 - Juli 2023</span></div>
+      <ul>
+        <li>Recorded and monitored daily cash inflows and outflows to ensure accurate financial tracking.</li>
+        <li>Performed input of incoming goods and maintained up-to-date stock records.</li>
+        <li>Carried out bookkeeping tasks to support smooth and organized store operations.</li>
+        <li>Maintained accurate documentation to assist inventory control and reporting.</li>
+      </ul>
+
+      <div class="baris"><span>Es teh Desa Jatinegara - Admin &amp; Barista</span><span>Juli 2023 - Oct 2024</span></div>
+      <ul>
+        <li>Prepared and made customer orders while ensuring consistent product quality.</li>
+        <li>Recorded daily cash transactions and maintained accurate store bookkeeping.</li>
+        <li>Maintained store cleanliness and organization to support a comfortable customer experience.</li>
+        <li>Handled customer interactions and inquiries, ensuring excellent service standards.</li>
+      </ul>
+
+      <div class="baris"><span>Gombong Huis - Waiters</span><span>Juni 2025 - Sept 2025</span></div>
+      <ul>
+        <li>Served and presented menu items to customers with attentive, friendly service.</li>
+        <li>Performed café closing procedures, including final checks and end-of-day tasks.</li>
+        <li>Maintained cleanliness and tidiness of the café to uphold service standards.</li>
+      </ul>
+
+      <div class="baris"><span>Business Owner Glowny Collection - Personal Asisstant</span><span>Juni 2026 - Agustus 2026</span></div>
+      <ul>
+        <li>Managed daily schedule, personal agenda, deadlines, and important reminders for the business owner.</li>
+        <li>Accompanied the business owner on work needs, both in and out of town.</li>
+        <li>Arranged travel logistics and reservations for hotels, flights, transport, and restaurants.</li>
+        <li>Conducted basic research on products, services, and vendors.</li>
+        <li>Handled personal errands and purchasing on the business owner's behalf.</li>
+        <li>Supported various PA tasks as directed, including correspondence, task prioritization, and pet care.</li>
+        <li>Applied strong adaptability, multitasking, and communication skills in a fast-paced setting.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="baris"><span>Bachelor of Software Engineering</span><span>Sept 2024 - May 2028 (Expected)</span></div>
+      <p><i>Telkom University Purwokerto</i></p>
+      <ul>
+        <li>Current GPA: 3.71 out of 4.00</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ADDITIONAL INFORMATION</h2>
+      <p><b>Soft Skills</b>: Problem Solving, Time Management, Detail Oriented, Multitasking, Teamwork in Collaboration, Innovative and Adaptive, Verbal &amp; Non-Verbal Communication.</p>
+      <p><b>Hard Skills</b>: Microsoft Office (Excel, Word, PowerPoint), Google Workspace (Sheets, Docs, Calendar, Drive), bookkeeping, Data entry &amp; filing system, Travel &amp; schedule arrangement, Invoice tracking</p>
+      <p><b>Languages</b>: Bahasa Indonesia (Fasih), English (Fluent).</p>
+      <p><b>Certifications</b>: English Course Certificate - Mr Bob (26 January - 20 February 2026).</p>
+    </section>
+
+  </div>
+</body>
+</html>
 ```
 
-## Cara Menjalankan
+### b. `style.css`
 
-1. Simpan file `index.html` dan `foto.jpeg` dalam folder yang sama.
-2. Buka folder proyek menggunakan Visual Studio Code.
-3. Buka file `index.html`.
-4. Jalankan menggunakan ekstensi Live Server atau buka file HTML melalui browser.
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+  background: #f2f2f2;
+  margin: 0;
+}
 
-## Struktur Halaman
+.cv {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px 40px;
+  background: #fff;
+}
 
-Website CV ini terdiri dari beberapa bagian utama:
+header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
 
-* **Header:** Menampilkan foto profil, nama, posisi profesional, alamat, nomor HP, email, dan media sosial.
-* **Summary:** Berisi ringkasan profil dan pengalaman profesional.
-* **Work Experience:** Menampilkan pengalaman kerja di bidang administrasi, operasional, pelayanan pelanggan, dan food and beverage.
-* **Education:** Menampilkan riwayat pendidikan dalam bentuk tabel.
-* **Additional Information:** Berisi hard skills, soft skills, kemampuan bahasa, dan sertifikasi.
-* **Register:** Menyediakan formulir untuk memasukkan data diri.
-* **Footer:** Dapat ditambahkan untuk menampilkan informasi hak cipta atau identitas website.
+header img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 61%;
+}
 
-## Teknologi yang Digunakan
+h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  color: #1f3a5f;
+}
 
-| Kategori                | Teknologi                             |
-| ----------------------- | ------------------------------------- |
-| Markup                  | HTML5                                 |
-| Struktur halaman        | HTML Semantik                         |
-| Komponen data           | HTML Table                            |
-| Formulir                | HTML Form                             |
-| Lingkungan pengembangan | Visual Studio Code                    |
-| Browser                 | Chrome, Firefox, atau browser lainnya |
+.kontak p {
+  margin: 2px 0;
+}
 
-## Penjelasan Elemen HTML
+h2 {
+  font-size: 16px;
+  color: #1f3a5f;
+  border-bottom: 1px solid #1f3a5f;
+  padding-bottom: 3px;
+  margin: 22px 0 10px;
+}
 
-* `<header>` digunakan untuk menampilkan identitas dan informasi utama.
-* `<section>` digunakan untuk mengelompokkan konten berdasarkan topik.
-* `<article>` digunakan untuk memisahkan setiap pengalaman kerja.
-* `<table>` digunakan untuk menyajikan riwayat pendidikan secara terstruktur.
-* `<form>` digunakan untuk menerima input data dari pengguna.
-* `<label>` digunakan untuk memberikan keterangan pada setiap input.
-* `<a>` digunakan untuk menghubungkan halaman dengan email atau media sosial.
+.baris {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: bold;
+  margin-top: 12px;
+}
 
-## Pengembangan Selanjutnya
+.baris span:last-child {
+  white-space: nowrap;
+}
 
-Website ini dapat dikembangkan lebih lanjut dengan menambahkan:
+ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
 
-* File CSS eksternal untuk memperbaiki tampilan dan responsivitas.
-* Navigasi antarbagian CV.
-* Validasi formulir yang lebih lengkap.
-* Tampilan responsif untuk perangkat desktop maupun mobile.
-* Footer yang berisi informasi hak cipta.
+p {
+  margin: 4px 0;
+}
 
-## Referensi
+@media (max-width: 600px) {
+  .cv { padding: 20px; margin: 0; }
+  header { flex-direction: column; }
+  .baris { flex-direction: column; gap: 0; }
+}
 
-* MDN Web Docs — [HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* MDN Web Docs — [HTML Forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms)
-* MDN Web Docs — [HTML Tables](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics)
+@media print {
+  body { background: #fff; }
+  .cv { margin: 0; padding: 0; max-width: none; }
+}
+```
+
+## 2. Screenshot Output
+
+![Screenshot Output CV](output.png)
+
+## 3. Deskripsi Program
+
+Program yang dibuat merupakan halaman Curriculum Vitae (CV) menggunakan HTML dan CSS. HTML digunakan untuk membangun struktur halaman yang terdiri dari header berisi foto dan informasi kontak, ringkasan profesional (summary), pengalaman kerja, pendidikan, serta informasi tambahan berupa soft skills, hard skills, bahasa, dan sertifikasi. Elemen seperti `header`, `section`, `h1`, `h2`, `ul`, dan `li` digunakan agar struktur dokumen semantik dan mudah dibaca.
+
+CSS digunakan untuk mengatur tampilan halaman. Seluruh isi CV dibungkus dalam class `cv` dengan lebar maksimal 800px, diposisikan di tengah, dan diberi latar putih di atas background abu-abu muda. Pada bagian header digunakan Flexbox agar foto profil dan informasi kontak tampil berdampingan, dengan foto dibuat berbentuk lingkaran menggunakan `border-radius` dan `object-fit: cover`. Judul setiap bagian (`h2`) diberi warna biru tua dan garis bawah sebagai pemisah antarbagian. Pada bagian pengalaman kerja dan pendidikan, nama posisi dan periode waktu ditampilkan sejajar dalam satu baris menggunakan class `baris` dengan Flexbox dan `justify-content: space-between`.
+
+Program juga menggunakan media query `max-width: 600px` agar tampilan menyesuaikan layar smartphone, yaitu foto dan kontak tersusun vertikal serta padding dikurangi. Selain itu, media query `print` ditambahkan agar CV tampil bersih tanpa background dan margin ketika dicetak. Hasil akhirnya adalah halaman CV yang terstruktur, konsisten, dan dapat ditampilkan dengan baik melalui web browser.
+
+---
+
+## Struktur Folder Project
+
+```text
+TUGAS-1-Web-CV-with-HTML-CSS/
+└── 103122400016_chiara calina devi/
+    ├── README.md
+    ├── cv.html
+    ├── style.css
+    ├── foto.jpg
+    └── screenshots/
+        └── output.png
+```
