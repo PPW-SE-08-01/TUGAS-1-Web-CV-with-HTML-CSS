@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Ghina Hasna Putri Tinimada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="register-page">
+    <main class="register-card">
+        <a class="back-link" href="index.html">← Kembali ke CV</a>
+        <p class="eyebrow">CV Ghina Hasna Putri Tinimada</p>
+        <h1>Register</h1>
+        <p class="form-intro">Lengkapi formulir berikut.</p>
+
+        <form class="register-form" action="register.html" method="post">
+            <div class="form-field">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autocomplete="username" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" autocomplete="new-password" required>
+            </div>
+
+            <div class="form-field">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required>
+            </div>
+
+            <button class="button button-primary submit-button" type="submit">Register</button>
+        </form>
+    </main>
+</body>
+
+</html>
