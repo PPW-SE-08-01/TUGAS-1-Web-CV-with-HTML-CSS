@@ -1,0 +1,301 @@
+:root {
+  --bg: #f1f2f4;
+  --surface: #ffffff;
+  --text: #1f2330;
+  --muted: #5c6377;
+  --accent: #2f4b8f;
+  --accent-dark: #24406f;
+  --rule: #dfe3ea;
+  --border: #c7ccd8;
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 2.5rem 1.25rem;
+}
+
+.container {
+  max-width: 860px;
+  margin-inline: auto;
+  padding: 2.75rem 3rem;
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(31 35 48 / 8%);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: currentColor;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.role {
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.contact-info,
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.25rem;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.section {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.section + .section {
+  margin-top: 1.5rem;
+}
+
+.section h2 {
+  margin-bottom: 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 0.6rem 1.5rem;
+}
+
+.skill-list dt {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.item + .item {
+  margin-top: 1.25rem;
+}
+
+.item-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.item-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.item-org {
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.item-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.item-points {
+  margin-top: 0.5rem;
+  padding-left: 1.15rem;
+  font-size: 0.95rem;
+}
+
+.item-points li + li {
+  margin-top: 0.3rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.field > label,
+.radio-group > legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+  border: 0;
+}
+
+.radio-group > legend {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 0.55rem 1.4rem;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: 0;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-dark);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem 0.75rem;
+  }
+
+  .container {
+    padding: 1.75rem 1.25rem;
+    border-radius: 8px;
+  }
+
+  .header h1 {
+    font-size: 1.55rem;
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .skill-list dd {
+    margin-bottom: 0.6rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+
+  body {
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 11pt;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .header,
+  .item {
+    break-inside: avoid;
+  }
+
+  h2 {
+    break-after: avoid;
+  }
+}
