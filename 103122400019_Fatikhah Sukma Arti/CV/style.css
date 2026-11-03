@@ -1,0 +1,333 @@
+/* ===== WARNA (gampang diganti di sini) ===== */
+:root {
+    --gelap: #1f3b5c;
+    --biru: #5aaee6;
+    --biru-bayi: #a9d8f5;
+    --biru-muda: #dff1fc;
+    --biru-pucat: #f0f8fe;
+    --teks: #2c4561;
+}
+
+/* ===== RESET & DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    color: var(--teks);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(31, 59, 92, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8%;
+}
+
+.logo {
+    color: var(--gelap);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: var(--teks);
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: var(--biru);
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-color: var(--biru-bayi);
+    color: var(--gelap);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8% 100px 8%;
+    gap: 40px;
+}
+
+.sapaan {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.peran {
+    color: var(--teks);
+    font-size: 18px;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: var(--gelap);
+    color: white;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 8px;
+}
+
+.tombol:hover {
+    background-color: var(--biru);
+}
+
+.hero-foto img {
+    width: 320px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 160px 160px 24px 24px;
+    border: 6px solid white;
+    background-color: var(--biru-muda);
+}
+
+/* ===== BAGIAN UMUM ===== */
+.bagian {
+    padding: 80px 8%;
+}
+
+.abu {
+    background-color: var(--biru-pucat);
+}
+
+.bagian h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--gelap);
+    margin-bottom: 30px;
+}
+
+.judul-kecil {
+    margin-top: 50px;
+}
+
+/* ===== TENTANG ===== */
+.tentang-teks {
+    max-width: 700px;
+    font-size: 17px;
+}
+
+/* ===== PENDIDIKAN ===== */
+.grid-2 {
+    display: flex;
+    gap: 24px;
+}
+
+.kotak {
+    flex: 1;
+    background-color: white;
+    border-left: 6px solid var(--biru);
+    padding: 24px;
+}
+
+.kotak h3 {
+    font-size: 20px;
+    margin: 8px 0 4px 0;
+    color: var(--gelap);
+}
+
+.label {
+    display: inline-block;
+    background-color: var(--biru-muda);
+    color: var(--gelap);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+}
+
+/* ===== PENGALAMAN ===== */
+.pengalaman {
+    max-width: 800px;
+}
+
+.baris {
+    display: flex;
+    gap: 30px;
+    padding: 24px 0;
+    border-top: 1px solid #cfe3f2;
+}
+
+.baris-kiri {
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.baris-kanan h3 {
+    font-size: 19px;
+    color: var(--gelap);
+}
+
+.sub {
+    color: #6b88a3;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.baris-kanan ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.baris-kanan li {
+    margin-bottom: 4px;
+}
+
+/* ===== KEAHLIAN ===== */
+.grup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.chip {
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--gelap);
+}
+
+.chip small {
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 8px;
+    opacity: 0.7;
+}
+
+.chip-a {
+    background-color: var(--biru-muda);
+}
+
+.chip-b {
+    background-color: white;
+    border: 2px solid var(--biru-bayi);
+}
+
+/* ===== KONTAK ===== */
+.kontak {
+    background-color: var(--biru-bayi);
+    color: var(--gelap);
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.kontak h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.tombol-kontak {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 30px 0 24px 0;
+}
+
+.tombol-kontak a {
+    background-color: white;
+    color: var(--gelap);
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.tombol-kontak a:hover {
+    background-color: var(--gelap);
+    color: white;
+}
+
+.alamat {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--gelap);
+    color: #a9c4dd;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* ===== RESPONSIF (HP) ===== */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 6% 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-foto img {
+        width: 240px;
+        height: 290px;
+    }
+
+    .grid-2 {
+        flex-direction: column;
+    }
+
+    .baris {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .baris-kiri {
+        width: auto;
+    }
+}
