@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abidah Fatimatuzzahrah</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk tampilan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header / Profile Section -->
+        <header class="profile-header">
+            <h1>Abidah Fatimatuzzahrah</h1>
+            <p class="subtitle">Software Engineering Student & Web Developer</p>
+            <div class="contact-info">
+                <span>📧 abidahh225@gmail.com</span>
+                <span>📱 085320004011</span>
+                <span>📍 Purwokerto Selatan</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- About Me Section -->
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Student at Telkom University, majoring in Software Engineering. I am a dedicated web developer with a passion for creating engaging and user-friendly websites.</p>
+            </section>
+
+            <!-- Education Section (Dalam Bentuk Table) -->
+            <section class="card">
+                <h2>Education</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Institution</th>
+                                <th>Major / Degree</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Telkom University</td>
+                                <td>Bachelor of Software Engineering</td>
+                                <td>2024 - Present</td>
+                            </tr>
+                            <tr>
+                                <td>SMK Telkom Purwokerto</td>
+                                <td>Software Engineering / IT</td>
+                                <td>2020 - 2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Skills Section (Dalam Bentuk Table) -->
+            <section class="card">
+                <h2>Skills</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technologies / Tools</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Frontend</td>
+                                <td>HTML, CSS, JavaScript, React.js</td>
+                            </tr>
+                            <tr>
+                                <td>Backend</td>
+                                <td>Node.js</td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td>MySQL, MongoDB</td>
+                            </tr>
+                            <tr>
+                                <td>Tools</td>
+                                <td>Git / Version Control</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="card">
+                <h2>Experience</h2>
+                <ul class="styled-list">
+                    <li>
+                        <strong>Internship at Selaras Studio (2023)</strong>
+                        <p>Assisted in designing web applications and improving user interfaces.</p>
+                    </li>
+                    <li>
+                        <strong>Freelance (2023)</strong>
+                        <p>Created custom designs and assets for clients.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="card">
+                <h2>Projects</h2>
+                <ul class="styled-list">
+                    <li>
+                        <strong>Portfolio Website</strong>
+                        <p>A personal portfolio showcasing my projects and skills.</p>
+                    </li>
+                    <li>
+                        <strong>E-commerce Platform</strong>
+                        <p>Developed a fully functional e-commerce website with payment integration.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Registration Form Section -->
+            <section class="card contact-form-section">
+                <h2>Register</h2>
+                <form action="submit_form.php" method="POST" class="modern-form">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="08123456789" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Register</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abidah-fatimatuzzahrah-7a40ab2b4/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/abbyy22" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/abidah.22" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2024 Abidah Fatimatuzzahrah. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
